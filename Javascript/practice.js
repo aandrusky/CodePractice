@@ -75,5 +75,51 @@ const calculateBmi = (weight, height) => {
 
 //4)
 
+// Your function takes two arguments:
+
+// current father's age (years)
+
+// current age of his son (years)
+
+// Сalculate how many years ago the father was twice as old as his son (or in how many years he will be twice as old).
+
+const kidAge = 5
+const dadAge = 31
+
+const twiceAsOld = (d, s) => Math.abs(d - 2 * s);
+
+const test = twiceAsOld(31, 10)
+
+console.log(test)
+
+
+//5)
+// You will be given an array of objects (hashes in ruby) representing data about developers who have signed up to attend the coding meetup that you are organising for the first time.
+
+// Your task is to return the number of JavaScript developers coming from Europe.
+
+var list1 = [
+    { firstName: 'Maia', lastName: 'S.', country: 'Tahiti', continent: 'Oceania', age: 28, language: 'JavaScript' },
+    { firstName: 'Shufen', lastName: 'L.', country: 'Taiwan', continent: 'Asia', age: 35, language: 'HTML' },
+    { firstName: 'Noah', lastName: 'M.', country: 'Switzerland', continent: 'Europe', age: 19, language: 'JavaScript' },
+    { firstName: 'Sumayah', lastName: 'M.', country: 'Tajikistan', continent: 'Asia', age: 30, language: 'CSS',
+    firstName: 'Danny', lastName: 'M.', country: 'Tajikistan', continent: 'Europe', age: 30, language: 'JavaScript' }
+  ];
+  
+
+  const countDevelopers = (list) => {
+  count = 0;
+  for(i = 0; i < list.length; ++i){
+      if(((list[i].continent) === 'Europe') && ((list[i].language) === 'JavaScript')) {
+          count+=1;
+  }
+  }
+  return count
+  }
+  
+  const test = countDevelopers(list1)
+  console.log(test)
+
+//6)
 
 
