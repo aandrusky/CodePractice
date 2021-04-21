@@ -154,4 +154,32 @@ const test = temperatureCheck(300)
 
 console.log(test)
 
+//8)
+// This series of katas will introduce you to basics of doing geometry with computers.
+
+// Point objects have x and y attributes (X and Y in C#) attributes.
+
+// Write a function calculating distance between Point a and Point b.
+
+// Tests round answers to 6 decimal places.
+
+const calculateDistance = (a , b) => {
+  let distance = Math.abs(a - b)
+ //  console.log(distance)
+  let decimal = distance.toFixed(6)
+  //console.log(decimal)
+  // let roundedDistance = Math.round(distance.toFixed(6))
+  //  console.log(roundedDistance)
+  return decimal
+}
+
+ const test = calculateDistance(70.3849494 , 20.38595922)
+  console.log(test)
+
+///////////////////
+-achtually-
+function distanceBetweenPoints(a, b) {
+  return Math.hypot(a.x - b.x, a.y - b.y);
+}
+
 
