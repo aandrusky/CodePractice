@@ -276,3 +276,28 @@ const howManyLightsabersDoYouOwn = (name = "") => {
 
 const test = howManyLightsabersDoYouOwn("Dave")
 console.log(test)
+
+//12)
+
+// Write a function which calculates the average of the numbers in a given list.
+
+// Note: Empty arrays should return 0.
+const array1 = [1,2,4]
+
+const find_average = (array) => {
+ 
+    const reducer = (accumulator, currentValue) => accumulator + currentValue;
+
+    let numberIWant = array.reduce(reducer);
+    let answerHopefully = numberIWant / array.length;
+  
+
+  return answerHopefully;
+  
+}
+ 
+
+
+const test = find_average(array1)
+
+console.log(test)
